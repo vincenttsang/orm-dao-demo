@@ -50,7 +50,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", tutor='" + tutor + '\'' +

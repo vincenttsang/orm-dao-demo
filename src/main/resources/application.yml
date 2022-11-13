@@ -16,4 +16,4 @@ spring:
     cache: false
     prefix: classpath:/templates/
     suffix: .html
-    mode: HTML5
+    mode: HTML

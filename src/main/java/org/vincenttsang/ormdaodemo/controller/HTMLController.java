@@ -1,13 +1,12 @@
 package org.vincenttsang.ormdaodemo.controller;
 
-import org.vincenttsang.ormdaodemo.entity.Student;
-import org.vincenttsang.ormdaodemo.entity.Teacher;
-import org.vincenttsang.ormdaodemo.hibernate.StudentRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.vincenttsang.ormdaodemo.entity.Student;
+import org.vincenttsang.ormdaodemo.entity.Teacher;
+import org.vincenttsang.ormdaodemo.hibernate.StudentRepository;
 import org.vincenttsang.ormdaodemo.hibernate.TeacherRepository;
 
 import java.util.List;

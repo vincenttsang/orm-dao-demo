@@ -6,6 +6,48 @@
 </head>
 <body>
     <a href="/database/showStudent">显示student表</a>
+    <br>
     <a href="/database/showTeacher">显示teacher表</a>
+    <br><br>
+    <label>学生增删查改</label>
+    <br>
+    <form method="get" action="/addStudent">
+        <label>添加学生</label>
+        <br>
+        <label>学生学号</label>
+        <input type="number" name="id" />
+        <br>
+        <label>学生姓名</label>
+        <input type="text" name="name" />
+        <br>
+        <label>学生导师</label>
+        <input type="text" name="tutor" />
+        <br>
+        <input type="submit" value="确认添加" />
+    </form>
+    <br><br>
+    <form method="get" action="/deleteStudent">
+        <label>删除学生</label>
+        <br>
+        <label>学生学号</label>
+        <input type="number" name="id" />
+        <br>
+        <input type="submit" value="确认删除" />
+    </form>
+    <br><br>
+    <form method="get" action="/updateStudent">
+        <label>更新学生</label>
+        <br>
+        <label>学生学号</label>
+        <input type="number" name="id" />
+        <br>
+        <label>学生姓名</label>
+        <input type="text" name="name" />
+        <br>
+        <label>学生导师</label>
+        <input type="text" name="tutor" />
+        <br>
+        <input type="submit" value="确认更新" />
+    </form>
 </body>
 </html>
