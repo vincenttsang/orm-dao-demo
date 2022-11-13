@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmln="http//www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>student表</title>
+</head>
+<body>
+    <table>
+        <p>SQLite3 Student表</p>
+        <tr>
+            <td>ID</td>
+            <td>姓名</td>
+            <td>导师</td>
+        </tr>
+        <tr th:each="stu : ${students}">
+            <td th:text="${stu.id}"></td>
+            <td th:text="${stu.name}"></td>
+            <td th:text="${stu.tutor}"></td>
+        </tr>
+    </table>
+    <a href="/">返回首页</a>
+</body>
+</html>

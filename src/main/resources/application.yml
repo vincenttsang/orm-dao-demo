@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username:
+    password:
+    url: jdbc:sqlite:demo.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    # 显示数据库操作记录
+    show-sql: true
+    hibernate:
+      # 每次启动更新数据表结构
+      ddl-auto: update
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+  thymeleaf:
+    encoding: UTF-8
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
